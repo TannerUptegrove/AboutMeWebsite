@@ -11,16 +11,18 @@ a {
 }
 
 body {
+    height: 100vh;
     background-color: black;
 }
 
 header {
     position: relative;
+    margin-bottom: 30px;
     border-bottom: 3px solid #cbae21;
 }
 
 #header-img {
-    height: 375px;
+    height: 300px;
 }
 
 #header-img img {
@@ -29,6 +31,7 @@ header {
 
     /* Equivalent to background-size: cover for background images. */
     object-fit: cover; 
+    object-position: top center;
 }
     
 
@@ -51,9 +54,30 @@ header nav {
 .nav-list-item {
     padding: 10px 15px;
 
-    background-color: #126150;
+    color: rgb(223, 223, 223);
+    background-color: #0e493b;
 }
 
 .nav-list-item:hover {
     background-color: #187a65;
+}
+
+main {
+    padding: 12px;
+    display: grid;
+    gap: 50px;
+}
+
+.description-box {
+    padding: 10px;
+
+    color: rgb(223, 223, 223);
+    background-color: #093027;
+    border-bottom: 1px solid; border-image: linear-gradient(90deg, rgb(255, 255, 255, 0.205),
+                                                                   rgb(207, 207, 207),
+                                                                   rgb(255, 255, 255, 0.205)) 1; 
+}
+
+.description-box-header {
+    margin-bottom: 15px;
 }
